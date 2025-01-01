@@ -25,19 +25,25 @@
             border-radius: 5px;
             font-family: Arial, sans-serif;
         }
-        button.tip {
+        button.tip1 {
             background-color: #007BFF;
             color: white;
         }
-        button.tip:hover {
+        button.tip1:hover {
             background-color: #0056b3;
         }
-        button.solution {
+        button.tip2 {
             background-color: #28a745;
             color: white;
         }
-        button.solution:hover {
+        button.tip2:hover {
             background-color: #218838;
+        }
+        .hidden {
+            display: none;
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #333;
         }
         img {
             max-width: 150%;
@@ -61,20 +67,20 @@
 
     <!-- Audio-Player -->
     <audio controls>
-        <source src="https://maike98.github.io/audio_raetsel-1/1.m4a" type="audio/mpeg">
+        <source src="https://maike98.github.io/audio_raetsel-1/1.m4a">
         Dein Browser unterstützt keine Audio-Wiedergabe.
     </audio>
 
     <!-- Tipp-Buttons und Felder, immer unter dem Audio-Player -->
     <div>
-        <button class="tip" onclick="showTip('tip')">Tipp</button>
-        <p id="tip" class="tip">Ein treibendes, intensives Thema, das die Heldenreise untermalt.</p>
+        <button onclick="showTip('tip1')">Tipp 1</button>
+        <p id="tip1" class="tip">Ein treibendes, intensives Thema, das die Heldenreise untermalt.</p>
     </div>
 
     <div>
-        <button class="solution" onclick="showTip('solution')">Auflösung</button>
-        <p id="solution" class="tip">
-            <img src="https://maike98.github.io/audio_raetsel-1/1.jpeg" alt="Bild zur Lösung">
+        <button onclick="showTip('tip2')">Tipp 2</button>
+        <p id="tip2" class="tip">
+            <img src="https://maike98.github.io/audio_raetsel-1/1.jpeg" alt="Bild zum Tipp">
         </p>
     </div>
 </body>

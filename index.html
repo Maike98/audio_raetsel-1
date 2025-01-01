@@ -17,43 +17,27 @@
             color: #333;
         }
         button {
-            margin: 10px;
+            margin-top: 10px;
             padding: 10px 20px;
             font-size: 1em;
             cursor: pointer;
             border: none;
-            border-radius: 5px;
-            font-family: Arial, sans-serif;
-        }
-        button.tip1 {
             background-color: #007BFF;
             color: white;
+            border-radius: 5px;
         }
-        button.tip1:hover {
+        button:hover {
             background-color: #0056b3;
         }
-        button.tip2 {
-            background-color: #28a745;
-            color: white;
-        }
-        button.tip2:hover {
-            background-color: #218838;
-        }
-        .hidden {
-            display: none;
-            margin-top: 10px;
-            font-size: 1.2em;
-            color: #333;
-        }
-        img {
-            max-width: 150%;
-            height: auto;
-            margin-top: 10px;
-        }
-        .tip img {
-            width: 200px; /* Bildbreite anpassen */
-            height: auto; /* Automatische Höhe für Proportionen */
-        }
+	img {
+       	 max-width: 150%;
+         height: auto;
+         margin-top: 10px;
+    }
+    .tip img {
+        width: 200px; /* Bildbreite anpassen */
+        height: auto; /* Automatische Höhe für Proportionen */
+    }
     </style>
     <script>
         function showTip(id) {
@@ -79,9 +63,7 @@
 
     <div>
         <button onclick="showTip('tip2')">Tipp 2</button>
-        <p id="tip2" class="tip">
-            <img src="https://maike98.github.io/audio_raetsel-1/1.jpeg" alt="Bild zum Tipp">
-        </p>
+        <p id="tip2" class="tip"> <img src="https://maike98.github.io/audio_raetsel-1/1.jpeg"</p>
     </div>
 </body>
 </html>
